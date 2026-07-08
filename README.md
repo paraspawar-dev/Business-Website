@@ -81,3 +81,9 @@ We build high-performance, beautiful, and secure platforms tailored to your busi
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/218781978?v=4" alt="Paras Pawar" width="100" style="border-radius: 50%;">
+  <p><b>Developed by Paras Pawar</b></p>
+</div>
