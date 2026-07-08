@@ -1,5 +1,9 @@
 # OpenRepair 🛠️
 
+> [!WARNING]  
+> **BETA / IN DEVELOPMENT STAGE**  
+> This project is currently in active development (Beta). Features may change, and there might be rough edges. Use in production environments at your own risk!
+
 **OpenRepair** (formerly built for a live production environment) is an open-source, highly responsive, and robust complete ecosystem for running a tech repair shop, computer service center, or any service-oriented business. 
 
 It includes a beautifully designed public-facing website for your customers, combined with a powerful backend API and automated WhatsApp ticketing integration.
