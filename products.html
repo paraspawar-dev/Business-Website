@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop computers, laptops, MacBooks, desktops and accessories — new, refurbished & pre-owned at OpenRepair Thane.">
+  <title>Products | OpenRepair Computer — OpenRepair</title>
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="icon" href="assets/logo-cropped.png" type="image/png">
+</head>
+<body>
+  <div id="banner-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 data-i18n="sections.products">Our Products</h1>
+      <p data-i18n="sections.productsDesc">Explore our range of new, refurbished and pre-owned computers, laptops & accessories.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Products</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="laptops">Laptops</button>
+        <button class="filter-btn" data-filter="desktops">Desktops</button>
+        <button class="filter-btn" data-filter="macbooks">MacBooks</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <!-- Catalog Controls -->
+      <div class="catalog-controls fade-in visible">
+        <div class="catalog-search-wrap">
+          <span class="catalog-search-icon">🔍</span>
+          <input type="text" id="product-search" class="catalog-search" placeholder="Search by model, specs, brand..." oninput="filterCatalog()">
+        </div>
+        <div class="catalog-sort-wrap">
+          <label for="product-sort" class="catalog-sort-label">Sort By:</label>
+          <select id="product-sort" class="catalog-sort" onchange="filterCatalog()">
+            <option value="default">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products-grid" id="products-grid"></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Can't Find What You Need?</h2>
+      <p>We can source any computer, laptop or accessory for you. Just tell us what you need!</p>
+      <button class="btn btn-cta" onclick="openTicketModal('Sales Inquiry')">Request a Custom Quote</button>
+    </div>
+  </section>
+
+  <div id="product-popup-container"></div>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/translations.js?v=2"></script>
+  <script src="js/tickets.js?v=3"></script>
+  <script src="js/products.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initPage('products');
+      renderProducts();
+      initProductFilters();
+    });
+  </script>
+  <svg style="display:none;position:absolute">
+    <filter id="liquid-glass">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+<script src="js/analytics.js"></script>
+</body>
+</html>

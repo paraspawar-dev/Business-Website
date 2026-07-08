@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About OpenRepair Computer — 10+ years of trusted IT solutions in Thane. Our mission, values, and story.">
+  <title>About Us | OpenRepair Computer — OpenRepair</title>
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="icon" href="assets/logo-cropped.png" type="image/png">
+</head>
+<body>
+  <div id="banner-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 data-i18n="sections.about">About Us</h1>
+      <p>The story behind Thane's most trusted computer service provider.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>About</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2 class="fade-in" style="margin-bottom:1rem;">Your Trusted IT Partner</h2>
+          <p class="fade-in" style="color:var(--gray-700);line-height:1.9;margin-bottom:1.5rem;">
+            <strong>OpenRepair Computer</strong> was founded with a simple mission — to provide honest, reliable, and affordable IT solutions to homes and businesses in Thane and Mumbai. We are a fast-growing IT solutions provider dedicated to delivering exceptional service.
+          </p>
+          <p class="fade-in" style="color:var(--gray-700);line-height:1.9;margin-bottom:1.5rem;">
+            We believe technology should be accessible and hassle-free. Whether you need a new laptop for your child's education, a complete office IT setup for your growing business, or just a quick repair for your PC — we treat every customer with the same dedication and transparency.
+          </p>
+          <p class="fade-in" style="color:var(--gray-700);line-height:1.9;">
+            Our team of certified technicians brings expertise across all major brands and platforms. We don't just fix computers — we build lasting relationships based on trust, quality, and fair pricing.
+          </p>
+        </div>
+        <div class="about-image fade-in">
+          <img src="assets/images/hero-service.png" alt="OpenRepair Team at Work" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="card fade-in">
+          <div class="card-icon">🤝</div>
+          <h3>Trust &amp; Transparency</h3>
+          <p>Honest diagnosis, fair pricing, and no hidden charges. We explain the issue before we fix it.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">⚡</div>
+          <h3>Speed &amp; Reliability</h3>
+          <p>Quick turnaround times with quality workmanship. Most repairs completed within 24-48 hours.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🎯</div>
+          <h3>Customer First</h3>
+          <p>Every decision we make is centered around delivering the best experience for our customers.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">📚</div>
+          <h3>Expertise &amp; Training</h3>
+          <p>Our technicians are continuously trained on the latest technologies and repair techniques.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">♻️</div>
+          <h3>Sustainability</h3>
+          <p>We promote refurbished products and responsible e-waste disposal to reduce environmental impact.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🏆</div>
+          <h3>Quality Assurance</h3>
+          <p>Warranty on all repairs and services. We stand behind our work with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="cta.title">Need IT Support? We're Just a Call Away!</h2>
+      <p data-i18n="cta.subtitle">Raise a free service ticket and our expert team will get back to you within 30 minutes.</p>
+      <button class="btn" style="background:white;color:var(--primary);font-weight:700;" onclick="openTicketModal()" data-i18n="cta.btn">Raise a Free Ticket</button>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/translations.js?v=2"></script>
+  <script src="js/tickets.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => initPage('about'));</script>
+  <svg style="display:none;position:absolute">
+    <filter id="liquid-glass">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+<script src="js/analytics.js"></script>
+</body>
+</html>

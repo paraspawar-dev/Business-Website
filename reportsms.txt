@@ -1,0 +1,37 @@
+===========================================
+Caliber Link Project - Daily Report
+Date: 2026-07-02
+===========================================
+
+[WHAT WE DID TODAY]
+1. Security & Backend Overhaul:
+   - Secured all `/api/admin` routes behind strict JWT authentication.
+   - Enforced rate-limiting to prevent brute force attacks on logins.
+   - Implemented `escapeHTML` across the frontend to prevent Cross-Site Scripting (XSS).
+
+2. Premium Billing System & UI:
+   - Added `discount_amount` column via SQLite migration to support live invoice discounts.
+   - Completely rewrote the Admin Billing section into a Premium Data Table.
+   - Built a Smart Invoice Creator that auto-fetches registered Customers and Products from the database.
+
+3. WhatsApp Bot Integration:
+   - Upgraded the `whatsapp-web.js` bot logic using `MessageMedia`.
+   - Created the `POST /invoices/:id/send-whatsapp` endpoint for manual dispatch of PDF invoices to customers.
+   
+4. Bug Fixes & Stability:
+   - Resolved a server crash caused by Chromium profiling locks (`ProtocolError: Runtime.callFunctionOn timed out`).
+   - Fixed frontend string interpolation bugs that broke the Invoice Builder modal.
+
+[WHAT IS LEFT FOR NEXT DAY]
+1. WhatsApp QR Code UI:
+   - Currently, the bot prints the QR code in the terminal logs. We need to build an Admin UI component that displays the live QR code so you can link WhatsApp directly from the dashboard.
+   
+2. Complete Remaining Admin Modules:
+   - Analytics Dashboard: Visualize total revenue, tickets open, and invoices sent.
+   - Ticket System: Transition the hardcoded ticket UI to hit the real SQLite database backend.
+   - CMS Module: Allow editing homepage banners and testimonials dynamically.
+
+3. Edge Case Testing:
+   - Test PDF generation and WhatsApp delivery on edge cases (e.g., if a customer has a malformed phone number).
+   - Ensure the server auto-restarts gracefully if WhatsApp disconnects in production.
+===========================================

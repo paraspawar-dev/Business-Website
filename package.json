@@ -1,0 +1,12 @@
+{
+  "name": "caliber-link",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx -y live-server --port=3000"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "jsdom": "^29.1.1",
+    "puppeteer": "^25.3.0"
+  }
+}

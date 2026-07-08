@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OpenRepair Services — Computer repair, laptop service, MacBook repair, AMC, networking, CCTV, data recovery and more in Thane.">
+  <title>Our Services | OpenRepair Computer — OpenRepair</title>
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="icon" href="assets/logo-cropped.png" type="image/png">
+</head>
+<body>
+  <div id="banner-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 data-i18n="sections.services">Our Services</h1>
+      <p data-i18n="sections.servicesDesc">From sales to service, we handle everything technology — so you can focus on what matters.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Services</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <div class="card fade-in">
+          <div class="card-icon">💻</div>
+          <h3>Computer & Laptop Sales</h3>
+          <p>Wide range of desktops, laptops and All-in-One PCs — brand new, certified refurbished, and pre-owned. We carry HP, Dell, Lenovo, Asus, Acer, and more. Customised configurations available for every budget.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🔧</div>
+          <h3>Repair & Service</h3>
+          <p>Expert diagnostics and repair for all brands. Hardware replacement, motherboard repair, screen replacement, keyboard issues, overheating fixes, and complete servicing with genuine parts.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🍎</div>
+          <h3>MacBook Sales & Service</h3>
+          <p>Specialised Apple MacBook repairs including battery replacement, screen repair, logic board fixes, and SSD upgrades. Certified refurbished MacBooks available with warranty.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🖨️</div>
+          <h3>Printer & Peripheral Solutions</h3>
+          <p>Sales, setup, and maintenance of printers (inkjet, laser, multifunction), scanners, UPS systems, and other peripherals. Cartridge refilling and toner replacement services.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🌐</div>
+          <h3>Networking & Infrastructure</h3>
+          <p>Complete network solutions — LAN setup, Wi-Fi installation, structured cabling, server configuration, firewall setup, and VPN solutions for offices of all sizes.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">📹</div>
+          <h3>CCTV & Security Systems</h3>
+          <p>Professional CCTV camera installation — IP cameras, dome cameras, DVR/NVR setup, remote viewing on mobile, and 24/7 surveillance solutions for homes and businesses.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">💾</div>
+          <h3>Data Recovery</h3>
+          <p>Professional data recovery from crashed hard drives, SSDs, pen drives, and memory cards. We handle logical failures, accidental deletions, and formatted drives.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">🛡️</div>
+          <h3>Software & Antivirus</h3>
+          <p>OS installation (Windows, macOS), software setup, virus and malware removal, system optimisation, and licensed antivirus solutions (Quick Heal, Kaspersky, Norton).</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">📋</div>
+          <h3>Annual Maintenance Contracts</h3>
+          <p>Comprehensive AMC plans for businesses — scheduled maintenance visits, priority support, hardware replacements, and dedicated account managers. Plans from Silver to Platinum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="cta.title">Need IT Support? We're Just a Call Away!</h2>
+      <p data-i18n="cta.subtitle">Raise a free service ticket and our expert team will get back to you within 30 minutes.</p>
+      <button class="btn btn-cta" onclick="openTicketModal()" data-i18n="cta.btn">Raise a Free Ticket</button>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/translations.js?v=2"></script>
+  <script src="js/tickets.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => initPage('services'));</script>
+  <svg style="display:none;position:absolute">
+    <filter id="liquid-glass">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+<script src="js/analytics.js"></script>
+</body>
+</html>

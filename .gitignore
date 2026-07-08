@@ -1,0 +1,11 @@
+node_modules/
+.env
+.wwebjs_auth/
+.wwebjs_cache/
+server/db/data.db
+server/db/data.db-shm
+server/db/data.db-wal
+server/logs/
+server/tmp/
+.DS_Store
+*.log
